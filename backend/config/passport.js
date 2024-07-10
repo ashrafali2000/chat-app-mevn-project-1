@@ -36,8 +36,8 @@ module.exports = function(passport) {
                 });
         })
     );
-
-    if (process.env.NODE_ENV !== 'test') {
+// for google and facebook if you use authentication
+    if (process.env.NODE_ENV !== 'development') {
         passport.use(
             new GoogleStrategy(GOOGLE_CONFIG, function(
                 req,
