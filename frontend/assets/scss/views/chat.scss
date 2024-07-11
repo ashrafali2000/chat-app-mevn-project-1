@@ -231,3 +231,16 @@
     }
 }
 }
+.chat__actions{
+    display: flex;
+ justify-content: end;
+ gap: 30px;
+ padding: 0 70px;
+ & .header_menu{
+ font-style: italic;
+ padding: 5px;
+ border: 1px solid #777;
+ border-radius: 10%;
+ color: #fff;
+ }
+}

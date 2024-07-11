@@ -64,10 +64,13 @@
                         <div class="chat__header" v-if="room">
                             <span class="section__title"># {{ room.name }}</span>
                             <div class="chat__actions">
-                                <ion-icon name="return-left" @click="leaveRoom" class="icon  text-white"></ion-icon>
-                                <ion-icon name="create" @click="openEditRoom" class="icon  text-white"></ion-icon>
-                                <ion-icon name="analytics" @click="viewRoomDetails" class="icon  text-white"></ion-icon>
-                                <ion-icon name="people" @click="toggleUserList" class="icon  text-white"></ion-icon>
+            
+                                <span name="roomm left" @click="leaveRoom" class="header_menu">room left</span>
+                                <span name="update" @click="openEditRoom" class=" header_menu">update room</span>
+                                <span name="analytics" @click="viewRoomDetails" class=" header_menu">analytics</span>
+                                <span name="people" @click="toggleUserList" class=" header_menu">people</span>
+                               
+                              
                             </div>
                         </div>
                         <MessageList :messages="messages" />
@@ -405,4 +408,5 @@ export default {
 @import '@/assets/scss/views/chat.scss';
 @import '@/assets/scss/views/rooms.scss';
 @import '@/assets/scss/components/infobox.scss';
+
 </style>
