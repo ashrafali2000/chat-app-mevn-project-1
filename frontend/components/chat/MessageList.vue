@@ -100,6 +100,7 @@ export default {
     },
     created() {
         this.user = this.getUserData;
+        console.log("messages-__________>",this.user)
     },
     methods: {
         scrollMessages() {

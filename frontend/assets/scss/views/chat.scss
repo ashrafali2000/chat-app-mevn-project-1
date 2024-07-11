@@ -224,3 +224,10 @@
         }
     }
 }
+.chat {
+&__actions{
+    &.text-white{
+    color: white !important;
+    }
+}
+}
