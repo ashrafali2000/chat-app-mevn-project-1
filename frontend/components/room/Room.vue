@@ -69,8 +69,6 @@
                                 <span name="update" @click="openEditRoom" class=" header_menu">update room</span>
                                 <span name="analytics" @click="viewRoomDetails" class=" header_menu">analytics</span>
                                 <span name="people" @click="toggleUserList" class=" header_menu">people</span>
-                               
-                              
                             </div>
                         </div>
                         <MessageList :messages="messages" />
